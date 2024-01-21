@@ -1,0 +1,68 @@
+/* ChatWindow.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .chat-window {
+    width: 70%;
+    height: 90%;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chat-messages {
+    padding: 10px;
+    overflow-y: auto;
+    max-height: calc(100% - 60px); /* Adjusted max-height to leave space for message input */
+    margin-top: auto; /* Move the chat messages to the top */
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 8px;
+    background-color: #f2f2f2;
+    border-radius: 6px;
+  }
+  
+  .message-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  .message-input input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 8px;
+  }
+  
+  .message-input button {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .message-input button:hover {
+    background-color: #0056b3;
+    color: #fff;
+  }
+
+  .set-username {
+    width: 50%;
+    margin: auto;
+  }
+  

@@ -1,0 +1,11 @@
+/build/
+bin
+node_modules
+.DS_Store
+.idea
+.gradle
+.vscode
+.settings
+.scannerwork
+.env
+
