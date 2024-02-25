@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import io from 'socket.io-client';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -27,11 +27,7 @@ export default function App() {
   }
 
   const sendMessage = () => {
-    const messageObject = {
-      userName: userName,
-      message: inputMessage,
-    };
-    socket.emit('send-message', messageObject);
+    socket.emit('send-message', {message: inputMessage});
     setInputMessage('');
   }
 
